@@ -1,47 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
+  <!--HEADER-->
+  <?php get_header(); ?>
+  <!--HEADER-->
   
-  <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
-  <!--<link rel="stylesheet" href="css/font-awesome.css">-->
- <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
- <!-- <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">-->
-  <!--<link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">-->
-
-   
-    
-    
-    <title>Reinventarse</title>
-    <?php wp_head(); ?>
-</head>
-
-<body>
-  <!--CABECERA FIJA-->
-  <header>
-    <a href="#" class="brand">
-      <img src=".\wp-content\uploads/logo1.png" >
-    </a>
-    <nav class="menu">
-      <div class="btn">
-        <i class="fas fa-times close-btn"></i>
-      </div>
-      <ul>
-        <li><a href="#">Conócenos</a></li>
-        <li><a href="#">Nuestro impacto</a></li>
-        <li><a href="#">Programas</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#" class="donar">Donar</a></li>
-      </ul>
-    </nav>
-    <div class="btn">
-      <i class="fas fa-bars menu-btn"></i>
-    </div>
-  </header>
-  <!-- FIN CABECERA FIJA-->
-
   <!--SLIDER 1-->
   <div class="slideshow">
     <ul class="slider">
@@ -549,43 +509,8 @@
   <!--FIN SLIDER 4-->
 
   <!--FOOTER-->
-
-  <footer>
-    <div class="contacto">
-      <ul>
-        <li><img src=".\wp-content\uploads/img-posicion.png" alt=""><span>Américo Vespucio Norte 0601, Cruce Lo Echevers
-            Edificio K2</span></li>
-        <li><img src=".\wp-content\uploads/img-telefonica.png" alt=""><span>(+562) 2 365 32 76</span></li>
-        <li><img src=".\wp-content\uploads/img-email.png" alt=""><span>contacto@reinventarse.cl</span></li>
-      </ul>
-    </div>
-    <div class="menu">
-      <ul>
-        <li><a href="#">Conócenos</a></li>
-        <li><a href="#">Nuestro Impacto</a></li>
-        <li><a href="#">Programas</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#" class="donar">Donar</a></li>
-      </ul>
-    </div>
-    <div class="link">
-      <a href="#"><img src=".\wp-content\uploads/img-facebook.png" alt=""></a>
-      <a href="#"><img src=".\wp-content\uploads/logo2.jpg" width="100px" alt="" class="logo"></a>
-    </div>
-  </footer>
-
-
-  <!--FIN FOOTER-->
-
-  <?php wp_footer();?>
-  
-  <!--<script src="js/jquery-3.1.0.min.js"></script>-->
-  <!--<script src="js/app.js"></script>-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>-->
-
-
-
+  <?php get_footer(); ?>
+  <!--FOOTER-->
 </body>
 
 </html>
