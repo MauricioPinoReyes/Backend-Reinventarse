@@ -508,6 +508,17 @@
 
   <!--FIN SLIDER 4-->
 
+  <!--FORMULARIO-->
+  
+  <div class="container-form-title">
+      <h2>Contacta con Nosotros</h2>
+    </div>
+  <div class="container-form animacion">
+    <?php echo do_shortcode('[contact-form-7 id="5" title="Formulario de contacto 1"]'); ?>
+  </div>
+
+  <!--FIN FORMULARIO-->
+
   <!--FOOTER-->
   <?php get_footer(); ?>
   <!--FOOTER-->
