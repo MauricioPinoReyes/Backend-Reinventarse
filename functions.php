@@ -14,3 +14,23 @@ function reinventarse_sitio_agregar_css_js(){
 
 }
 add_action( 'wp_enqueue_scripts', 'reinventarse_sitio_agregar_css_js');
+
+// Menu
+
+register_nav_menus(array(
+    'principal' => 'Menu Principal'
+));
+
+
+// Soporte imagenes destacadas
+
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+}
+
+// Modificando cantidad de palabras funcion the_excerpt()
+
+function reinventarse_sitio_modifica_cant_palabras_excerpt( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'reinventarse_sitio_modifica_cant_palabras_excerpt', 999 );

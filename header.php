@@ -18,12 +18,20 @@
         <i class="fas fa-times close-btn"></i>
       </div>
       <ul>
-        <li><a href="#">Conócenos</a></li>
+        <!--<li><a href="#">Conócenos</a></li>
         <li><a href="#">Nuestro impacto</a></li>
         <li><a href="#">Programas</a></li>
         <li><a href="#">Contacto</a></li>
         <li><a href="#" class="donar">Donar</a></li>
-      </ul>
+      </ul>-->
+      <?php
+        $arg = array(
+            'theme_location' => 'principal',
+        );
+        wp_nav_menu($arg);
+      ?>
+
+
     </nav>
     <div class="btn">
       <i class="fas fa-bars menu-btn"></i>

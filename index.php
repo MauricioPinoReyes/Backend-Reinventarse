@@ -5,7 +5,23 @@
   <!--SLIDER 1-->
   <div class="slideshow">
     <ul class="slider">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <li class="slider1">
+            <?php if(has_post_thumbnail()){
+                the_post_thumbnail('post-thumbnails', array(
+                'class' => 'img-noticias' ));}
+             ?>                    
+                
+        <section class="caption animacion2">
+          <a href=" <?php the_permalink(); ?>"><?php the_title('<h1>', '</h1>' ); ?></a>
+              <p><?php the_excerpt()?></p>
+				</section>
+			</li>                
+    <?php  endwhile; endif;?>
+
+
+
+     <!-- <li class="slider1">
         <img src=".\wp-content\uploads/img1.jpeg" alt="">
         <section class="caption">
           <p>Capacitación, apoyo y desarrollo para la reinserción</p>
@@ -29,7 +45,7 @@
           <h1>de oportunidades </h1>
         </section>
       </li>
-    </ul>
+    </ul> -->
     <ol class="pagination">
     </ol>
 
@@ -511,7 +527,7 @@
   <!--FORMULARIO-->
   
   <div class="container-form-title">
-      <h2>Contacta con Nosotros</h2>
+      <h2>Contacta con nosotros</h2>
     </div>
   <div class="container-form animacion">
     <?php echo do_shortcode('[contact-form-7 id="5" title="Formulario de contacto 1"]'); ?>
