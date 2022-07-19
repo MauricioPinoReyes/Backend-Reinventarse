@@ -13,12 +13,12 @@
     <a href="#" class="brand">
       <img src=".\wp-content\uploads/logo1.png" >
     </a>
-    <nav class="menu">
+    <nav class="menu-nav">
       <div class="btn">
         <i class="fas fa-times close-btn"></i>
       </div>
-      <ul>
-        <!--<li><a href="#">Conócenos</a></li>
+     <!-- <ul>
+        <li><a href="#">Conócenos</a></li>
         <li><a href="#">Nuestro impacto</a></li>
         <li><a href="#">Programas</a></li>
         <li><a href="#">Contacto</a></li>

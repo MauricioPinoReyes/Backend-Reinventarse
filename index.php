@@ -506,6 +506,40 @@
 
   <!-- FIN PROGRAMAS -->
 
+  <!--SLIDER 3-->
+
+  <div class="slider3">
+		<div class="noticias-titulo">
+			<div class="noticias-text">
+				<h1>Últimas Noticias</h1>
+			</div>
+		</div>
+		<div class="slideshow">
+			<ul class="slider">
+
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <li>
+            <?php if(has_post_thumbnail()){
+                the_post_thumbnail('post-thumbnails');}
+             ?>                    
+             <div class="slider-tex">
+             <a href=" <?php the_permalink(); ?>"><?php the_title('<h1>', '</h1>' ); ?></a>
+              <p><?php the_excerpt()?></p>
+             </div>
+        </li>                
+      <?php  endwhile; endif;?>
+        
+			</ul>
+			<div class="right3">
+				<span class="fa fa-chevron-right"></span>
+			</div>
+		</div>
+		
+	</div>     
+
+
+  <!--FIN SLIDER 3-->
+
   <!--SLIDER 4-->
 
   <div class="container-slider4">

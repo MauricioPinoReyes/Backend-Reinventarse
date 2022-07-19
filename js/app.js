@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 });
 
 //javascript para el menú de la barra lateral de navegación 
-var menu = document.querySelector('.menu');
+var menu = document.querySelector('.menu-nav');
 var menuBtn = document.querySelector('.menu-btn');
 var closeBtn = document.querySelector('.close-btn');
 
@@ -125,6 +125,34 @@ $(document).ready(function () {
 	}
 	/*--FIN CARRUSEL 2 */
 
+
+	/*--CARRUSEL 3---*/
+		var imgItemsTres = $('.slider3 .slider li').length; // Numero de Slides
+		var imgPosTres = 1;
+
+		$('.slider3 .slider li').hide(); // Ocultanos todos los slides
+		$('.slider3 .slider li:first').show(); // Mostramos el primer slide
+		
+
+		// Ejecutamos todas las funciones
+		
+		$('.slider3 .right3 span').click(nextSliderTres);
+		
+
+
+		// FUNCIONES SLIDER 3 =========================================================
+
+		
+		function nextSliderTres(){
+			if( imgPosTres >= imgItemsTres){imgPosTres = 1;} 
+			else {imgPosTres++;}
+			$('.slider3 .slider li').hide(); // Ocultamos todos los slides dos
+			$('.slider3 .slider li:nth-child('+ imgPosTres +')').fadeIn(); // Mostramos el SlideDos seleccionado
+
+		}
+
+	/*--FIN CARRUSEL 3---*/
+
 	/*--CARRUSEL 4--*/
 	$('.slider4').slick({
 		slidesToShow: 4,
@@ -168,12 +196,6 @@ $(document).ready(function () {
 	
 	/*-FIN SLIDER 4--*/
 });
-
-
-
-
-
-
 
 
 /*--PROGRAMAS--*/
@@ -276,8 +298,6 @@ close7.addEventListener('click', () => {
   modal_container7.classList.remove('show');
 });
 
-
-/*-SLIDER 4--*/
 
 
 
