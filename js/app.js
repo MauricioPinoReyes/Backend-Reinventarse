@@ -137,7 +137,7 @@ $(document).ready(function () {
 		// Ejecutamos todas las funciones
 		
 		$('.slider3 .right3 span').click(nextSliderTres);
-		
+		$('.slider3 .left3 span').click(prevSliderTres);
 
 
 		// FUNCIONES SLIDER 3 =========================================================
@@ -148,7 +148,13 @@ $(document).ready(function () {
 			else {imgPosTres++;}
 			$('.slider3 .slider li').hide(); // Ocultamos todos los slides dos
 			$('.slider3 .slider li:nth-child('+ imgPosTres +')').fadeIn(); // Mostramos el SlideDos seleccionado
+		}
 
+		function prevSliderTres(){
+			if( imgPosTres <= 1){imgPosTres = imgItemsTres;} 
+			else {imgPosTres--;}
+			$('.slider3 .slider li').hide(); // Ocultamos todos los slides dos
+			$('.slider3 .slider li:nth-child('+ imgPosTres +')').fadeIn(); // Mostramos el SlideDos seleccionado
 		}
 
 	/*--FIN CARRUSEL 3---*/

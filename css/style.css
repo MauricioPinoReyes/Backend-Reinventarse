@@ -260,18 +260,25 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /*text-align: center;*/
   color: #fff;
   z-index: 1;
 }
 
 .slider .caption h1 {
   font-size: 3.125rem;
+  /*color: rgb(0 101 163);*/
+  /*color: black;*/
+  color: #fff;
 }
 
 .slider .caption p {
   margin-top: 0.625rem;
   font-size: 1.25rem;
+}
+
+.slider .caption a {
+  text-decoration: none;
 }
 
 .pagination {
@@ -704,8 +711,6 @@ ul {
   font-size:1.1rem;
 }
 
-
-
 .modal-btn-close-superior button{
   background-color:rgb(234, 103, 42);
   border-radius: 0.31rem;
@@ -772,10 +777,16 @@ ul {
 }
 
 /*--SLIDER 3--*/
-
+.slider3-container{
+  background-color: #ffffff;
+  border-top: solid 5px rgb(234, 103, 42);
+  /*border-bottom: solid 5px rgb(234, 103, 42);*/
+}
 .slider3 .slideshow{    
 	width: 70%;
 	position: relative;
+  border: solid 2px rgb(234, 103, 42);
+  box-shadow: -1px 3px 11px -1px rgb(0 0 0 / 75%);
 }
 
 .slider3 ul,ol{               
@@ -784,6 +795,7 @@ ul {
 
 .slider3 .slider li, ul{
 	width: 100%;
+  
 }
 
 .slider3 .slider li{
@@ -796,20 +808,41 @@ ul {
     /*border-radius: 50%;*/
     text-align: center;
 	margin-bottom: 10px;
+  border-bottom: solid 2px rgb(234, 103, 42);
+}
+
+.slider3 .slider li a{
+	text-decoration:none;
+}
+
+.slider3 .slider-tex h1{
+	color: rgb(0 101 163);;
+}
+
+.slider3 .slider-tex p{
+	color: rgb(0 101 163);
 }
 
 .slider3 .right3{
+  right: -40px;
+}
+
+.slider3 .left3{
+    left: -40px;
+}
+
+.slider3 .right3, .left3{
 	position: absolute;
 	top: 0;
 	height: 100%;
 	display: flex;
 	align-items: center;
-	color: #EA672A;
+	color: rgb(234, 103, 42);
 	font-size: 35px;
 	cursor: pointer;
 	z-index: 2;
-	margin-right: -100px;
-	right: 50px;
+	/*margin-right: -100px;*/
+	/*right: 50px;*/
 }
 
 
@@ -817,15 +850,20 @@ ul {
 	display: flex;
 	/*text-align: center;*/
 	align-items: center;
-	margin-top: 50px;
-	margin-right: 70px;
+	/*margin-top: 50px;*/
+	/*margin-right: 70px;*/
+  padding-right: 70px;
+  padding-top: 70px;
+  padding-bottom: 40px;
 }
 
 .slider3 .slider-tex{
 	width: 100%;
 	margin: auto;
 	text-align: left;
-  background-color: black;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  /*background-color: black;*/
 }
 
 .slider3 .noticias-titulo{
@@ -844,6 +882,7 @@ ul {
 
 .slider3 .noticias-text h1{
 	margin-left: 20px;
+  color: rgb(0 101 163);
 }
 
 @media (max-width: 630px){
@@ -875,7 +914,7 @@ ul {
 
 .container-slider4{
     
-  height: 28.87rem;
+height: 28.87rem;
   background-color: rgb(34 35 36 / 90%);
 }
 
