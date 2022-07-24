@@ -201,6 +201,57 @@ $(document).ready(function () {
 	});
 	
 	/*-FIN SLIDER 4--*/
+
+
+	/*----HISTORIA----*/
+
+	$(".step").click( function() {
+		$(this).addClass("active").prevAll().addClass("active");
+		$(this).nextAll().removeClass("active");
+	});
+	
+	$(".step01").click( function() {
+		$("#line-progress").css("width", "0%");
+		$(".2011").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step02").click( function() {
+		$("#line-progress").css("width", "14%");
+		$(".2013").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step03").click( function() {
+		$("#line-progress").css("width", "28%");
+		$(".2015").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step04").click( function() {
+		$("#line-progress").css("width", "42.5%");
+		$(".2017").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step05").click( function() {
+		$("#line-progress").css("width", "56.5%");
+		$(".2019").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step06").click( function() {
+		$("#line-progress").css("width", "70.5%");
+		$(".2020").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step07").click( function() {
+		$("#line-progress").css("width", "85%");
+		$(".2021").addClass("active").siblings().removeClass("active");
+	});
+	
+	$(".step08").click( function() {
+		$("#line-progress").css("width", "100%");
+		$(".2022").addClass("active").siblings().removeClass("active");
+	});
+
+	/*--FIN HISTORIA---*/
+	
 });
 
 

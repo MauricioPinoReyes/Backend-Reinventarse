@@ -28,3 +28,4 @@
   <!--FIN FOOTER-->
 
   <?php wp_footer();?>
+  

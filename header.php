@@ -10,8 +10,8 @@
 <body>
   <!--CABECERA FIJA-->
   <header>
-    <a href="#" class="brand">
-      <img src=".\wp-content\uploads/logo1.png" >
+    <a href="<?php echo esc_url( home_url('/')) ;?>" class="brand">
+      <img src="<?php bloginfo('template_directory');?>/images/logo1.png" >
     </a>
     <nav class="menu-nav">
       <div class="btn">

@@ -46,8 +46,9 @@
         </section>
       </li>
     </ul> -->
-    <ol class="pagination">
-    </ol>
+    
+    <!--<ol class="pagination">
+    </ol>-->
 
     <div class="left">
       <span class="fa fa-chevron-left"></span>
