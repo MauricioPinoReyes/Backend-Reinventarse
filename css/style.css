@@ -76,7 +76,7 @@ header {
   align-items: center;
   padding: 1.25rem 0.625rem;
   transition: 0.6s;
-  background-color: #fff;
+  background-color: rgb(104, 15, 15);
   border-bottom: solid 0.2875rem rgb(234, 103, 42);
 }
 
@@ -1647,16 +1647,71 @@ footer .link .logo{
 	border: none;
 }
 
-
-
-
-
-
-
-
 /*=========FIN NOTICIAS PAGE=========*/
 
+/*====SINGLE PAGE=====*/
 
+.single-container{
+  display: flex;
+  margin-top: 150px;
+}
+
+.single .title h1{
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.single p{
+  font-size: 16px;
+}
+
+.single-container .single{
+  width: 65%;
+  padding-left: 25px;
+  padding-bottom: 100px;
+}
+
+.single-container .post img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.sidebar-single{
+  width: 35%;
+  padding-left: 25px;
+  padding-right: 40px;
+}
+.sidebar-single ul {
+  margin-top: 35px;
+  clear: both;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-single .excerpt img{
+  width: 100%;
+}
+
+.sidebar-single h2{
+  text-align: center;
+}
+
+.single-noticias .excerpt{
+  margin-bottom: 50px;
+  border-bottom: solid 2px coral;
+  padding-bottom: 5px;
+}
+
+.single-noticias .excerpt p{
+  padding-top: 5px;
+}
+
+.single-noticias .excerpt .date{
+  margin-bottom: 15px;
+}
+
+/*====FIN SINGLE PAGE=====*/
 
 
 /*---ANIMACIONES----*/

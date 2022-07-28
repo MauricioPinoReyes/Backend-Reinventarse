@@ -1,22 +1,51 @@
 <?php get_header(); ?>
        
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="card-body">
-                    <h2><?php the_title(); ?></h2>
-                </a>
-                <p class="small mb-3">Fecha: <?php the_time('F j, Y'); ?></p>
-                <p class="small mb-3">Autor: <?php the_author() ;?></p>
-                <p class="small">Categorias : <?php the_category(' / '); ?>
-                    Etiquetas: <?php the_tags('', ' / ',''); ?>
-                </p>    
-                <?php
-                    if(has_post_thumbnail()){
-                        the_post_thumbnail('post-thumbnails');
-                    }
+<div class="single-container">
+        <div class="single">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <article class="post">
+                    <div class="title">
+                        <h1><?php the_title(); ?></h1>
+                    </div>
+                    <?php if(has_post_thumbnail()){
+                    the_post_thumbnail('post-thumbnails');}
                 ?>
-                <!--<img src="img/img4.jpg" alt="" class="img-fluid mb-3" width="800px">-->
-                <?php the_content();?>
+                    <?php the_content(); ?>
+
+                </article>
+                <?php  endwhile; endif;?>
+        </div> 
+
+        <!-- Sidebar -->
+       
+       <div class="sidebar-single">
+            <h2>Últimas Noticias</h2>
+            <?php
+                global $post;
+                $last_posts = get_posts(array('posts_per_page' => 3));
+                foreach ( $last_posts as $post ) :
+                setup_postdata( $post );?>
+            <div>
+                <ul class="single-noticias">
+                    <li>
+                        <article class="excerpt">
+                            <div>
+                                <h4 class="date"><?php the_time('F j, Y'); ?></h4>
+                            </div>
+                            <a href="">
+                            <h4><?php the_title(); ?></h4>
+                                 
+                            </a>
+                            <p><?php the_excerpt();?></p>
+                        </article>
+                    </li>
+                    
+                </ul>
             </div>
-        <?php  endwhile; endif;?>
-                     
+            <?php endforeach;
+                wp_reset_postdata();
+            ?>            
+        </div>
+        
+    </div> 
     <?php get_footer() ?>
