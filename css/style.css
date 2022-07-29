@@ -76,7 +76,7 @@ header {
   align-items: center;
   padding: 1.25rem 0.625rem;
   transition: 0.6s;
-  background-color: rgb(104, 15, 15);
+  background-color:#ffffff;
   border-bottom: solid 0.2875rem rgb(234, 103, 42);
 }
 
@@ -1578,9 +1578,178 @@ footer .link .logo{
 
 /*=========FIN CONÓCENOS PAGE=====================================================*/
 
+/*=========PROGRAMAS PAGE=====================================================*/
+
+.programas-text-container{
+  background-color: #ffffff;
+}
+
+.programas-text-container .title{
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.pro-title{
+  margin-top: 60px;
+}
+
+.programas-text-container .title h1{
+  font-size: 30px;
+  color:rgb(0 101 163);
+ 
+}
+
+.programas-text-container .title p{
+  font-size: 14px;
+  color: rgb(234, 103, 42);
+  font-weight: 700;
+}
+
+.programas-text-container .title span{
+  color: rgb(0 101 163);
+}
+.objetivos-text-img{
+  display: flex;
+}
+
+.prog-objetivos{
+  color: rgb(0 101 163);    
+  width: 50%;
+  padding-left: 30px;
+}
+
+.prog-objetivos h3{
+font-size: 25px;
+margin-bottom: 5px;
+}
+
+.prog-objetivos ul{
+  margin-bottom: 30px;
+}
+
+.prog-objetivos li{
+  font-size: 20px;
+  list-style: none;
+
+}
+
+.programas-img{
+  width: 50%;
+}
+
+.programas-img img{
+  width: 70%;
+  padding-top: 70px;
+  padding-left: 25px;
+}
+
+.title-programas{
+  background-color:rgb(34 35 36 / 90%) ;
+}
+
+.title-programas h3{
+  color: rgb(234, 103, 42);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  
+} 
+
+
+.page-programas-container{
+  display: flex;
+  padding-top: 25px;
+  background-color:rgb(34 35 36 / 90%) ;
+  padding-bottom: 80px;
+}
 
 
 
+.programa-box{
+  padding-left: 50px;
+}
+
+
+.programas-box-container1{
+  width: 50%;
+}
+
+.programas-box-container2{
+  width: 50%;
+}
+
+
+#info-programa1, 
+#info-programa2,
+#info-programa3,
+#info-programa4,
+#info-programa5,
+#info-programa6,
+#info-programa7
+{
+ display: none;
+}
+
+
+
+.box-programa{
+  padding-left: 90px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  color: rgb(0 101 163);
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+
+.box-programa strong{
+  color:  rgb(234, 103, 42);
+}
+
+.box-programa ul{
+  margin-bottom: 20px;
+}
+
+
+
+.title-img-container{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+ /* background-color: rgb(234, 103, 42);*/
+ /* background-color:  rgb(199, 186, 180);*/
+ background-color: #fff;
+ color: rgb(0 101 163);
+}
+
+.title-img-container:hover{
+  color: rgb(234, 103, 42);
+  
+}
+
+.title-img-container h4{
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.title-img-container img{
+  /*filter: invert(68%) sepia(77%) 
+  saturate(5253%) hue-rotate(346deg) 
+  brightness(97%) contrast(89%);*/
+  
+  filter: invert(27%) sepia(97%) 
+  saturate(920%) hue-rotate(173deg) 
+  brightness(97%) contrast(106%);
+} 
+
+
+/*=========FIN PROGRAMAS PAGE=====================================================*/
 
 /*=========NOTICIAS PAGE================================================*/
 

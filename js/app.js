@@ -251,6 +251,33 @@ $(document).ready(function () {
 	});
 
 	/*--FIN HISTORIA---*/
+
+	/*=====PAGE PROGRAMAS=======*/
+
+	$('#title-programa1').on('click', function () {
+        $('#info-programa1').toggle(1000);
+    });
+    $('#title-programa2').on('click', function () {
+        $('#info-programa2').toggle(1000);
+    });
+    $('#title-programa3').on('click', function () {
+        $('#info-programa3').toggle(1000);
+    });
+    $('#title-programa4').on('click', function () {
+        $('#info-programa4').toggle(1000);
+    });
+    $('#title-programa5').on('click', function () {
+        $('#info-programa5').toggle(1000);
+    });
+    $('#title-programa6').on('click', function () {
+        $('#info-programa6').toggle(1000);
+    });
+    $('#title-programa7').on('click', function () {
+        $('#info-programa7').toggle(1000);
+    });
+
+	/*=====FIN PAGE PROGRAMAS=======*/
+
 	
 });
 
@@ -354,6 +381,9 @@ open7.addEventListener('click', () => {
 close7.addEventListener('click', () => {
   modal_container7.classList.remove('show');
 });
+
+
+
 
 
 
